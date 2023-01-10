@@ -1,6 +1,6 @@
 # 🏗️ Boilerplate for Nuxt, Tailwind & NetlifyCMS
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cb2d4cc5-8a65-4940-81ce-4456ff96e6db/deploy-status)](https://app.netlify.com/sites/ntn-boilerplate/deploys) ← replace with [your own](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/general#deploy-status-badge)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b7003986-40ab-4f0d-b7f5-e2eb592a8398/deploy-status)](https://app.netlify.com/sites/fantastic-valkyrie-416312/deploys)
 
 **[Live Demo](https://ntn-boilerplate.netlify.app/)**
 
@@ -20,9 +20,10 @@ An opinionated starter template for a quick start with the following technologie
 - PWA (install website as standalone app)
 - Netlify CMS (no need for a separate server)
 - Prettier
-- Nuxt-content (w/ exensible support for markdown and code-blocks)
+- Nuxt-content (w/ extensible support for markdown and code-blocks)
 
-##### Optional extra setup
+### Optional extra setup
+
 - Git LFS (store uploaded images outside the main repo)
 - Netlify LM (Netlify’s Git LFS support)
 
@@ -33,16 +34,18 @@ Use the deploy button to get your own copy of the repository.
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Knogobert/ntn-boilerplate&stack=cms)
 
 This will setup everything needed for running the CMS:
- - A new repository in your GitHub account with the code
- - Full Continuous Deployment to Netlify's global CDN network
- - Control users and access with Netlify Identity
- - Manage content with Netlify CMS and Nuxt-content
+
+- A new repository in your GitHub account with the code
+- Full Continuous Deployment to Netlify's global CDN network
+- Control users and access with Netlify Identity
+- Manage content with Netlify CMS and Nuxt-content
 
 Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite. Start with by registering a regular email-account (not OAuth yet!) with a [generated password](https://passwordwolf.com/).
 
 You should be up and running, ready for personalization!
 
-### These extra steps are only necessary if you want to upload large media in Netlify CMS:
+### These extra steps are only necessary if you want to upload large media in Netlify CMS
+
 This way it doesn't clutter up your repo with large unmanageable files. But *do know* that it is easier to add later than undoing it later.
 
 1. **[Install git-lfs](https://git-lfs.github.com/)** on your computer and remove the `#` in the project's `.gitattributes`
@@ -59,13 +62,13 @@ This way it doesn't clutter up your repo with large unmanageable files. But *do 
 npm install
 ```
 
-2. 🏗 Run the project for local dev. This will start a hot-reloading server at `localhost:3000`.
+1. 🏗 Run the project for local dev. This will start a hot-reloading server at `localhost:3000`.
 
 ```bash
 npm run dev
 ```
 
-3. 🌌 Build the app for server-side rendered deployment. See more about **Universal SSR** in the [Nuxt.js docs](https://nuxtjs.org/guide#server-rendered-universal-ssr-).
+1. 🌌 Build the app for server-side rendered deployment. See more about **Universal SSR** in the [Nuxt.js docs](https://nuxtjs.org/guide#server-rendered-universal-ssr-).
 
 ```bash
 npm run build
@@ -74,7 +77,7 @@ npm run build
 npm run start
 ```
 
-4. ⚡️ Generate a fully pre-rendered static site. See more [in the docs](https://nuxtjs.org/guide#static-generated-pre-rendering-).
+1. ⚡️ Generate a fully pre-rendered static site. See more [in the docs](https://nuxtjs.org/guide#static-generated-pre-rendering-).
 
 ```bash
 npm run generate
@@ -115,9 +118,9 @@ npm run generate
 
 Make sure to set to "registration invite only" [here](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity#registration-preferences) if you don't want spam.
 
-When you create your first account, _don’t_ sign up using OAuth, generate a new password and sign in that way locally, otherwise a successful login will send you to the URL you typed in instead of keeping you on localhost.
+When you create your first account, *don’t* sign up using OAuth, generate a new password and sign in that way locally, otherwise a successful login will send you to the URL you typed in instead of keeping you on localhost.
 
-If you want the Netlify signup emails to work with this boilerplate, you need to either add the 'netlify-identity-widget' to `nuxt.config.js` under `head`, [Follow the advice here](https://answers.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690). Or enable the fixed and included email-templates’ paths in Netlify, under [Site Settings > Identity > Emails](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity) and there you can set `/static/emails/THE_TEMPLATE_NAME.html` for each template.
+If you want the Netlify sign-up emails to work with this boilerplate, you need to either add the 'netlify-identity-widget' to `nuxt.config.js` under `head`, [Follow the advice here](https://answers.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690). Or enable the fixed and included email-templates’ paths in Netlify, under [Site Settings > Identity > Emails](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity) and there you can set `/static/emails/THE_TEMPLATE_NAME.html` for each template.
 
 ---
 

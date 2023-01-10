@@ -1,3 +1,13 @@
 {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "cSpell.words": [
+        "audetcameron’s",
+        "Desroches",
+        "lfsconfig",
+        "sitedescription",
+        "sitelang",
+        "sitename",
+        "Subfont",
+        "Vuex"
+    ]
 }
